@@ -70,21 +70,29 @@ A new .env file should be created.
 
 9. Navigate to the file and uncomment variables below. You can set the password, database and username to your own.
 
+```bash
 DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
 DB_PORT=3306
 DB_DATABASE=laravel
 DB_USERNAME=sail
 DB_PASSWORD=password
+```
 
 10. Generate application key
 
+```bash
 ./vendor/bin/sail artisan key:generate
+```
 
 11. Create migrations and seeders
 
+```bash
 ./vendor/bin/sail artisan migrate:fresh --seed
+```
 
 11. Start application
 
+```bash
 ./vendor/bin/sail up
+```
