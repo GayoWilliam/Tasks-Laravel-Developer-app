@@ -17,16 +17,19 @@ A laravel sail web application that allows one to create and manage tasks.
 
 ```bash
 git clone https://github.com/GayoWilliam/Tasks-Laravel-Developer-app.git
+```
 
 2. Once cloned, change directory to the cloned directory
 
 ```bash
 cd Tasks-Laravel-Developer-app
+```
 
 3. At this point ensure VS code is installed on your device. While still in the terminal run
 
 ```bash
 code .
+```
 
 This should open your directory on VS code. At this point ensure docker is installed on your device[documentation](https://docs.docker.com/engine/install/).
 
@@ -41,6 +44,7 @@ docker run --rm \
     -w /var/www/html \
     laravelsail/php83-composer:latest \
     composer install --ignore-platform-reqs
+```
 
 This ensures all dependencies needed by the application are installed.
 
@@ -48,16 +52,19 @@ This ensures all dependencies needed by the application are installed.
 
 ```bash
 composer require laravel/sail --dev
+```
 
 7. Then
 
 ```bash
 php artisan sail:install
+```
 
 8. Once it's done executing, while still in the terminal, copy the environment variables by running
 
 ```bash
 cp .env.example .env
+```
 
 A new .env file should be created.
 
